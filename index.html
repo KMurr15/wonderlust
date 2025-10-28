@@ -246,46 +246,46 @@
             <h2>Contact Us <span id="required">(*required)</span></h2>
             <form method="post" action="https://wp.zybooks.com/form-viewer.php">
                 <div>
-                    <label>First Name<span>*</span></label>
-                    <input>
+                    <label id="user-first-name">First Name<span>*</span></label>
+                    <input type="text" name="user-first-name" id="user-first-name" autocomplete="on" required>
                 </div>
 
                 <div>
-                    <label>Last Name<span>*</span></label>
-                    <input>
+                    <label id="user-last-name">Last Name<span>*</span></label>
+                    <input type="text" name="user-last-name" id="user-last-name" autocomplete="on" required>
                 </div>
 
                 <div>
-                    <label>Email<span>*</span></label>
-                    <input>
+                    <label id="user-email">Email<span>*</span></label>
+                    <input type="email" name="user-email" id="user-email" autocomplete="on" required>
                 </div>
 
                 <div>
-                    <label>Phone<span>*</span></label>
-                    <input>
+                    <label id="user-phone">Phone<span>*</span></label>
+                    <input type="tel" name="user-phone" id="user-phone" autocomplete="on" required>
                 </div>
 
                 <fieldset id="preferred-contact">
                     <legend>Preferred Contact Method<span>*</span></legend>
                     <div> 
-                        <input>
-                        <label>Email</label>
+                        <input type="radio" name="preferred-contact" id="prefers-email" checked>
+                        <label id="prefers-email">Email</label>
                     </div>
 
                     <div>
-                        <input>
-                        <label>Text</label>
+                        <input type="radio" name="preferred-contact" id="prefers-text">
+                        <label id="prefers-text">Text</label>
                     </div>
 
                     <div>
-                        <input>
-                        <label>Phone</label>
+                        <input type="radio" name="preferred-contact" id="prefers-phone">
+                        <label id="prefers-phone">Phone</label>
                     </div>
                 </fieldset>
 
                 <fieldset id="destination">
-                    <legend>Destination<span>*</span></legend>
-                    <select id="select-destination">
+                    <legend for="select-destination">Destination<span>*</span></legend>
+                    <select id="select-destination" name="select-destination" required>
                         <option>Choose</option>
                         <option>Barcelona</option>
                         <option>Granada</option>
@@ -300,8 +300,8 @@
                 </fieldset>
 
                 <fieldset id="travelTime">
-                    <legend>Travel Time<span>*</span></legend>
-                    <select id="select-travel-time">
+                    <legend for="select-travel-time">Travel Time<span>*</span></legend>
+                    <select id="select-travel-time" name="select-travel-time" required>
                         <option>Choose</option>
                         <option>Fall</option>
                         <option>Winter</option>
@@ -310,8 +310,8 @@
                         <option>Flexible</option>
                     </select>
                 </fieldset>
-                
-                <input>
+
+                <input type="submit" name="submit" id="submit">
             </form>
         </section>
 
