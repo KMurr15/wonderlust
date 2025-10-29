@@ -88,17 +88,6 @@ header {
     border-top: 3px solid var(--soft-white);
     border-bottom: 3px solid var(--soft-white);
 }
-.skip-link {
-    top: 150px;
-    right: 20px;
-    padding: 1rem;
-    max-width: 80%;
-    position: absolute;
-    opacity: 0%;
-}
-.skip-link:focus-within {
-    opacity: 100%;
-}
 picture {
     display: grid;
     place-content: center;
